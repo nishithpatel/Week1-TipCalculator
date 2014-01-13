@@ -4,24 +4,23 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.view.Menu;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class TipCalculatorActivity extends Activity {
 	
-	public EditText input;
-	public TextView tipOutput;
-	public TextView totalOutput;
+	public EditText etInput;
+	public TextView tvTipOutput;
+	public TextView tvTotalOutput;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_tip_calculator);
-		input = (EditText) findViewById(R.id.input);
-		tipOutput = (TextView) findViewById(R.id.tipOutput);
-		totalOutput = (TextView) findViewById(R.id.totalOutput);
+		etInput = (EditText) findViewById(R.id.etInput);
+		tvTipOutput = (TextView) findViewById(R.id.tvTipOutput);
+		tvTotalOutput = (TextView) findViewById(R.id.tvTotalOutput);
 	}
 
 	@Override
@@ -33,7 +32,7 @@ public class TipCalculatorActivity extends Activity {
 	
 	public void calculateTip(View view) {
 		// when any of the 3 tip options is selected
-		String input_value = input.getText().toString();
+		String input_value = etInput.getText().toString();
 		
 		
 		Double tip = 0.0;
@@ -82,8 +81,8 @@ public class TipCalculatorActivity extends Activity {
 		    }
         }
 
-    	tipOutput.setText(tip_str);
-		totalOutput.setText(total_str);
+    	tvTipOutput.setText(tip_str);
+		tvTotalOutput.setText(total_str);
 
 	}
 

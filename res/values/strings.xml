@@ -12,5 +12,7 @@
     <string name="totalOutput">Total: $</string>
     <string name="tipPerctHeader">"Select your tip %: "</string>
     <string name="tipHeader">"Tip: "</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>

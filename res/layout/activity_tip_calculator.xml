@@ -9,7 +9,7 @@
     tools:context=".TipCalculatorActivity" >
 
     <EditText
-        android:id="@+id/input"
+        android:id="@+id/etInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
@@ -22,7 +22,7 @@
     </EditText>
 
     <TextView
-        android:id="@+id/equalSign"
+        android:id="@+id/tvEqualSign"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -49,11 +49,11 @@
         android:text="@string/option3" />
 
     <TextView
-        android:id="@+id/tipOutput"
+        android:id="@+id/tvTipOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/equalSign"
-        android:layout_toRightOf="@+id/equalSign"
+        android:layout_alignBottom="@+id/tvEqualSign"
+        android:layout_toRightOf="@+id/tvEqualSign"
         android:text="@string/tipOutput"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
@@ -61,13 +61,13 @@
         android:id="@+id/btnOption2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/input"
+        android:layout_alignLeft="@+id/etInput"
         android:layout_centerVertical="true"
         android:onClick="calculateTip"
         android:text="@string/option2" />
 
     <TextView
-        android:id="@+id/totalOutput"
+        android:id="@+id/tvTotalOutput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
@@ -76,19 +76,19 @@
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
-        android:id="@+id/tipHeader"
+        android:id="@+id/tvTipHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/tipPerctHeader"
-        android:layout_toRightOf="@+id/equalSign"
+        android:layout_alignBottom="@+id/tvTipPerctHeader"
+        android:layout_toRightOf="@+id/tvEqualSign"
         android:text="@string/tipHeader" />
 
     <TextView
-        android:id="@+id/tipPerctHeader"
+        android:id="@+id/tvTipPerctHeader"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btnOption1"
-        android:layout_toLeftOf="@+id/equalSign"
+        android:layout_toLeftOf="@+id/tvEqualSign"
         android:text="@string/tipPerctHeader"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 

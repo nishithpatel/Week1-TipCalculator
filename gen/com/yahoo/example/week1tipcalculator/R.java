@@ -28,23 +28,25 @@ public final class R {
         public static final int btnOption1=0x7f080002;
         public static final int btnOption2=0x7f080003;
         public static final int btnOption3=0x7f080004;
-        public static final int equalSign=0x7f080001;
-        public static final int input=0x7f080000;
-        public static final int tipHeader=0x7f080007;
-        public static final int tipOutput=0x7f080005;
-        public static final int tipPerctHeader=0x7f080008;
-        public static final int totalOutput=0x7f080006;
+        public static final int etInput=0x7f080000;
+        public static final int tvEqualSign=0x7f080001;
+        public static final int tvTipHeader=0x7f080007;
+        public static final int tvTipOutput=0x7f080005;
+        public static final int tvTipPerctHeader=0x7f080008;
+        public static final int tvTotalOutput=0x7f080006;
     }
     public static final class layout {
         public static final int activity_tip_calculator=0x7f030000;
     }
     public static final class menu {
-        public static final int tip_calculator=0x7f070000;
+        public static final int main=0x7f070000;
+        public static final int tip_calculator=0x7f070001;
     }
     public static final class string {
         public static final int action_settings=0x7f050001;
         public static final int app_name=0x7f050000;
         public static final int equals=0x7f050003;
+        public static final int hello_world=0x7f05000c;
         public static final int input_prompt=0x7f050002;
         public static final int option1=0x7f050004;
         public static final int option2=0x7f050005;
@@ -52,6 +54,7 @@ public final class R {
         public static final int tipHeader=0x7f05000a;
         public static final int tipOutput=0x7f050007;
         public static final int tipPerctHeader=0x7f050009;
+        public static final int title_activity_main=0x7f05000b;
         public static final int totalOutput=0x7f050008;
     }
     public static final class style {
