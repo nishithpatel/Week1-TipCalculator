@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Week1TipCalculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="input_prompt">Enter amount</string>
+    <string name="equals">"= "</string>
+    <string name="option1">10%</string>
+    <string name="option2">15%</string>
+    <string name="option3">20%</string>
+    <string name="tipOutput">$</string>
+    <string name="totalOutput">Total: $</string>
+    <string name="tipPerctHeader">"Select your tip %: "</string>
+    <string name="tipHeader">"Tip: "</string>
+
+</resources>
