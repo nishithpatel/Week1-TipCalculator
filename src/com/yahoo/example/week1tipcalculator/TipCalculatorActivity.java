@@ -44,33 +44,46 @@ public class TipCalculatorActivity extends Activity {
 		if(input_value == null || input_value.trim().equals(""))
         {
 			Toast.makeText(this, "Please enter a valid amount", Toast.LENGTH_SHORT).show();
+			tip_str = "$";
+	        total_str = "Total: $";
         }
         else 
         {
         	Double amount = Double.valueOf(input_value);
-	        switch(view.getId()) {
-	        case R.id.btnOption1:
-	          // selected 10%
-	        	tip = amount*0.1;
-	          break;
-	        case R.id.btnOption2:
-	          // selected 15%
-	        	tip = amount*0.15;
-	          break;
-	        case R.id.btnOption3:
-	            // selected 20%
-	        	tip = amount*0.2;
-	            break;
-	        }
-	        
-	        total = amount+tip;
-	        
-	        tip_str = "$" + String.valueOf(tip);
-	        total_str = "Total: $" + String.valueOf(total);
-	        
-	        tipOutput.setText(tip_str);
-			totalOutput.setText(total_str);
+        	
+        	if(amount == 0)
+        	{
+        		Toast.makeText(this, "Please enter a non-zero amount", Toast.LENGTH_SHORT).show();
+        		tip_str = "$";
+		        total_str = "Total: $";
+        	}
+        	else
+        	{
+		        switch(view.getId()) 
+		        {
+			        case R.id.btnOption1:
+			          // selected 10%
+			        	tip = amount*0.1;
+			          break;
+			        case R.id.btnOption2:
+			          // selected 15%
+			        	tip = amount*0.15;
+			          break;
+			        case R.id.btnOption3:
+			            // selected 20%
+			        	tip = amount*0.2;
+			            break;
+		        }
+		        
+		        total = amount+tip;
+		        
+		        tip_str = "$" + String.valueOf(tip);
+		        total_str = "Total: $" + String.valueOf(total);
+		    }
         }
+
+    	tipOutput.setText(tip_str);
+		totalOutput.setText(total_str);
 
 	}
 
